@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <img src="images/logo.png" alt="Speedi logo" class="logo">
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Driven by Passion, Built for Enthusiasts</h1>
+      <p>We don't just work on cars—we breathe life into automotive dreams. From classic restorations to cutting-edge performance upgrades, our team lives for the thrill of the machine.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>Our Story</h2>
+      <p>Founded in 2024 by a group of hardcore speedi, Speedi started as a small workshop with big dreams. Today, we're a full-service automotive hub where passion meets precision engineering.</p>
+      <p>Our team combines decades of experience with genuine enthusiasm—because we believe cars aren't just transportation, they're rolling works of art.</p>
+
+      <!-- Counter Section -->
+      <div class="counter">
+        <h3>Project Counter</h3>
+        <p id="count">0</p>
+        <button id="increment">+ Add Project</button>
+        <button id="decrement">- Remove Project</button>
+        <button id="toggleCounter">Hide Counter</button>
+      </div>
+
+      <!-- Youtube section-->
+      <div class="video-section">
+        <h3 class="video-title">Check Out Our Latest Build</h3>
+        <p class="video-description">Watch us transform this classic car in our workshop</p>
+        <div class="video-container">
+          <iframe id="youtubeVideo" src="https://www.youtube-nocookie.com/embed/ROVObkWvYfM?si=HJsji3m9GMOc2Y2w" allowfullscreen></iframe>
+        </div>
+        <button id="changeVideo">Show Different Video</button>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Performance Tuning</h3>
+          <p>Unlock your car's true potential with our dyno-tested ECU remaps, turbo upgrades, and custom exhaust systems.</p>
+        </div>
+        <div class="service-card">
+          <h3>Restoration & Custom Builds</h3>
+          <p>Breathing new life into classics is our specialty. We combine period-correct authenticity with modern reliability.</p>
+        </div>
+        <div class="service-card">
+          <h3>Track & Off-Road Prep</h3>
+          <p>Our suspension setups, roll cages, and weight reduction techniques will have you podium-ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="showcase">
+      <h2>Featured Builds</h2>
+      <div id="carShowcase">
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>123 Motor Avenue</p>
+          <p>Cabuyao, Laguna 4025</p>
+          <p>Phone: (+63) 123-4567</p>
+          <p>Email: info@speedi.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <p>Monday-Friday: 9AM - 6PM</p>
+          <p>Saturday: 10AM - 4PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Reyhern Hernandez. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
