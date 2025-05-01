@@ -1,3 +1,19 @@
+//Alert Message
+function showWelcomeAlert() {
+  alert("Welcome to Speedi Garage! Thanks for visiting our website.");
+}
+window.onload = showWelcomeAlert;
+// Add Paragraph
+function addNewText() {
+  const aboutSection = document.getElementById("about");
+  const newContent = document.createElement("div");
+  newContent.className = "added-content";
+  newContent.innerHTML = `
+    <p>We take pride in our work and guarantee all services for 12 months.</p>
+    <p>Our team is certified by the National Institute for Automotive Service Excellence.</p>
+  `;
+  aboutSection.insertBefore(newContent, document.querySelector("#about .text-buttons"));
+}
 // Mobile menu toggle
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
